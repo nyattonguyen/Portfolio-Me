@@ -37,7 +37,7 @@ const Contact = () => {
             <h4>Message</h4>
             <h5>Egatorturials</h5>
             <a
-              href="https://m.me/profile.php?id=100013007494386"
+              href="https://m.me/..."
               target="_blank"
             >
               Send a message
@@ -48,7 +48,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+84 898419640</h5>
             <a
-              href="https://api.whatsapp.com/send?phone+0898419640"
+              href="https://api.whatsapp.com/send?phone"
               target="_blank"
             >
               Send a message
