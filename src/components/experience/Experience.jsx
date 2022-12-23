@@ -2,6 +2,72 @@ import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
+const data1 = [
+  {
+    id: 1,
+    name: "HTML",
+    status: "Experienced",
+  },
+  {
+    id: 2,
+    name: "CSS",
+    status: "Experienced",
+  },
+  {
+    id: 3,
+    name: "Javascript",
+    status: "Experienced",
+  },
+  {
+    id: 4,
+    name: "React",
+    status: "Experienced",
+  },
+  {
+    id: 5,
+    name: "React Native",
+    status: "Experienced",
+  },
+  {
+    id: 6,
+    name: "XML",
+    status: "Experienced",
+  },
+];
+
+const data2 = [
+  {
+    id: 1,
+    name: "NodeJs",
+    status: "Experienced",
+  },
+  {
+    id: 2,
+    name: "Mongodb",
+    status: "Experienced",
+  },
+  {
+    id: 3,
+    name: "MySQL",
+    status: "Experienced",
+  },
+  {
+    id: 4,
+    name: "MsSQL",
+    status: "Experienced",
+  },
+  {
+    id: 5,
+    name: "Java",
+    status: "Experienced",
+  },
+  {
+    id: 1,
+    name: "NodeJs",
+    status: "Experienced",
+  },
+];
+
 const experience = () => {
   return (
     <section id="experience">
@@ -11,41 +77,17 @@ const experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Javascript</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>React Native</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
+            {data1.map((item) => {
+              return (
+                <article className="experience__details" key={item.id}>
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>{item.name}</h4>
+                    <small className="text-align">{item.status}</small>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
 
@@ -53,41 +95,17 @@ const experience = () => {
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Nodejs</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Mongodb</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>PHP</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Java</h4>
-                <small className="text-align">Experienced</small>
-              </div>
-            </article>
+            {data2.map((item) => {
+              return (
+                <article className="experience__details" key={item.id}>
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>{item.name}</h4>
+                    <small className="text-align">{item.status}</small>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>

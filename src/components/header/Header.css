@@ -31,19 +31,23 @@ header {
     content:"";
     width: 1px;
     height: 2rem;
-    background: var(--color-primary);
 }
 /* ================== ME =================== */
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 30rem;
+    height: 25rem;
     position: absolute;
     left: calc(50% - 11.8rem);
-    margin-top: 4rem;
+    margin-top: 1rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.2rem 1.2rem 0.5rem;
+    padding: 5rem 1.2rem 4.2rem 0.5rem;
+}
+.img-me {
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    margin-left: 6px;
 }
 /* ================== SCROLL DOWN =================== */
 .scroll__down {

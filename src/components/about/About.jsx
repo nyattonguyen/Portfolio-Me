@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../../assets/2.jpg";
+import Me from "../../assets/1.jpg";
 import { FaAward, FaUserAstronaut } from "react-icons/fa";
 import { VscRootFolderOpened } from "react-icons/vsc";
 import "./About.css";
@@ -30,7 +30,7 @@ const about = () => {
             <article className="about__card">
               <VscRootFolderOpened className="about__icon" />
               <h5>Projects</h5>
-              <small>10+ Completed</small>
+              <small>7+ Completed</small>
             </article>
           </div>
           <p>watashiha ............................</p>
