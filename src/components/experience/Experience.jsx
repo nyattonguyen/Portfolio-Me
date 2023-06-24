@@ -37,6 +37,11 @@ const data1 = [
 
 const data2 = [
   {
+    id: 0,
+    name: "RESTful API",
+    status: "Experienced",
+  },
+  {
     id: 1,
     name: "Java",
     status: "Experienced",
