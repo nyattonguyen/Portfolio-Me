@@ -4,16 +4,6 @@ import { BsPatchCheckFill } from "react-icons/bs";
 
 const data1 = [
   {
-    id: 1,
-    name: "HTML",
-    status: "Experienced",
-  },
-  {
-    id: 2,
-    name: "CSS",
-    status: "Experienced",
-  },
-  {
     id: 3,
     name: "Javascript",
     status: "Experienced",
@@ -29,6 +19,16 @@ const data1 = [
     status: "Experienced",
   },
   {
+    id: 1,
+    name: "HTML",
+    status: "Experienced",
+  },
+  {
+    id: 2,
+    name: "CSS",
+    status: "Experienced",
+  },
+  {
     id: 6,
     name: "XML",
     status: "Experienced",
@@ -38,32 +38,40 @@ const data1 = [
 const data2 = [
   {
     id: 1,
-    name: "NodeJs",
-    status: "Experienced",
-  },
-  {
-    id: 2,
-    name: "Mongodb",
-    status: "Experienced",
-  },
-  {
-    id: 3,
-    name: "MySQL",
-    status: "Experienced",
-  },
-  {
-    id: 4,
-    name: "MsSQL",
-    status: "Experienced",
-  },
-  {
-    id: 5,
     name: "Java",
     status: "Experienced",
   },
   {
-    id: 1,
+    id: 2,
     name: "NodeJs",
+    status: "Experienced",
+  },
+  {
+    id: 3,
+    name: "Javascript",
+    status: "Experienced",
+  },
+];
+
+const data3 = [
+  {
+    id: 1,
+    name: "Mongodb",
+    status: "Experienced",
+  },
+  {
+    id: 2,
+    name: "MySQL",
+    status: "Experienced",
+  },
+  {
+    id: 3,
+    name: "MsSQL",
+    status: "Experienced",
+  },
+  {
+    id: 4,
+    name: "Oracle",
     status: "Experienced",
   },
 ];
@@ -96,6 +104,23 @@ const experience = () => {
           <h3>Backend Development</h3>
           <div className="experience__content">
             {data2.map((item) => {
+              return (
+                <article className="experience__details" key={item.id}>
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>{item.name}</h4>
+                    <small className="text-align">{item.status}</small>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+        {/* database  */}
+        <div className="experience__database">
+          <h3>Database Development</h3>
+          <div className="experience__content">
+            {data3.map((item) => {
               return (
                 <article className="experience__details" key={item.id}>
                   <BsPatchCheckFill className="experience__details-icon" />

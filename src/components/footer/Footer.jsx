@@ -21,9 +21,9 @@ const footer = () => {
         <li>
           <a href="#experience">Experience</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#services">Services</a>
-        </li>
+        </li> */}
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
@@ -38,7 +38,7 @@ const footer = () => {
         <a href="https://facebook.com">
           <FaFacebook className="footer__socials-icon" />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://www.instagram.com/nyattonguyen/">
           <FiInstagram className="footer__socials-icon" />
         </a>
         <a href="https://twitter.com">

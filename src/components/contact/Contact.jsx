@@ -36,10 +36,7 @@ const Contact = () => {
             <AiOutlineMessage className="contact__option-icon" />
             <h4>Message</h4>
             <h5>Egatorturials</h5>
-            <a
-              href="https://m.me/..."
-              target="_blank"
-            >
+            <a href="https://m.me/..." target="_blank">
               Send a message
             </a>
           </article>
@@ -47,10 +44,7 @@ const Contact = () => {
             <AiOutlineWhatsApp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+84 898419640</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone"
-              target="_blank"
-            >
+            <a href="https://api.whatsapp.com/send?phone" target="_blank">
               Send a message
             </a>
           </article>

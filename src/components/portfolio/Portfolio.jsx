@@ -2,21 +2,30 @@ import React from "react";
 import "./Portfolio.css";
 import IMG1 from "../../assets/project1.jpg";
 import IMG2 from "../../assets/project2.jpg";
+import IMG3 from "../../assets/autocheck.jpg";
 
 const data = [
   {
-    id: 1,
-    image: IMG1,
-    title: "Mobile application",
-    github: "https://github.com/nyattonguyen/21store",
-    demo: "https://dibbble.com/...",
+    id: 3,
+    image: IMG3,
+    title: "Web application",
+    github: "https://github.com/nyattonguyen/autocheck",
+    demo: "",
   },
+
   {
     id: 2,
     image: IMG2,
     title: "Web application",
     github: "https://github.com/nyattonguyen/E-Souji",
-    demo: "https://dibbble.com/...",
+    demo: "",
+  },
+  {
+    id: 1,
+    image: IMG1,
+    title: "Mobile application",
+    github: "https://github.com/nyattonguyen/21store",
+    demo: "",
   },
 ];
 

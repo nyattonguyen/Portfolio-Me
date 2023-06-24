@@ -14,12 +14,12 @@ const data = [
   {
     avatar: AVTR1,
     name: "Hoai Bao",
-    review: "Nyatto totemo ii",
+    review: "",
   },
   {
     avatar: AVTR2,
     name: "Lam Truong",
-    review: "Nyatto totemo ii",
+    review: "",
   },
 ];
 
